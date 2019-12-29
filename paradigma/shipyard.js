@@ -1,34 +1,26 @@
 class Shipyard {
   constructor() {
-    this._perahuMotorHouse = [];
-    this._perahuLayarHouse = [];
-    this._kapalPesiarHouse = [];
+    this._typeOfShips = ["perahu layar", "perahu motor", "kapal pesiar"];
+    this._shipHouse = {
+      "perahu layar": [],
+      "perahu motor": [],
+      "kapal pesiar": []
+    };
   }
-  shipKeeper(type) {
-    if (typeof type !== "string") return `jenis kapal tidak diketahui`;
 
-    let previousTotal = 0;
-    if (type === "perahu motor") {
-      previousTotal = this._perahuMotorHouse.length;
-      this._perahuMotorHouse.push(type);
-      if (this._perahuMotorHouse.length > previousTotal) {
-        return `kapal jenis ${type} berhasil disimpan`;
+  shipKeeper(ship) {
+    if (typeof ship !== "string") return `Maaf, jenis kapal tidak diketahui`;
+
+    const length = this._typeOfShips.length;
+    const type = this._typeOfShips;
+
+    for (let i = 0; i < length; i++) {
+      if (ship === type[i]) {
+        this._shipHouse[type[i]].push(ship);
+        return `kapal jenis ${ship} berhasil disimpan ke tempat penyimpanan ${type[i]}`;
       }
-    } else if (type === "perahu layar") {
-      previousTotal = this._perahuLayarHouse.length;
-      this._perahuLayarHouse.push(type);
-      if (this._perahuLayarHouse.length > previousTotal) {
-        return `kapal jenis ${type} berhasil disimpan`;
-      }
-    } else if (type === "kapal pesiar") {
-      previousTotal = this._kapalPesiarHouse.length;
-      this._kapalPesiarHouse.push(type);
-      if (this._kapalPesiarHouse.length > previousTotal) {
-        return `kapal jenis ${type} berhasil disimpan`;
-      }
-    } else {
-      return `Maaf, tempat penyimpanan untuk jenis kapal ${type} belum tersedia`;
     }
+    return `Maaf, tempat penyimpanan kapal jenis ${ship} belum tersedia`;
   }
 }
 
@@ -39,4 +31,6 @@ class saveTheShip extends Shipyard {
 }
 
 const saveTheShipApp = new saveTheShip();
-console.log(saveTheShipApp.shipKeeper("kapal layar"));
+
+const ship = "kapal pesiar";
+console.log(saveTheShipApp.shipKeeper(ship));
