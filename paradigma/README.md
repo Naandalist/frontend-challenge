@@ -26,7 +26,7 @@ Running on **Node Js** :
 node shipyard.js
 ```
 
-**Result**:
+Result:
 
 ```
 kapal jenis kapal pesiar berhasil disimpan ke tempat penyimpanan kapal pesiar
