@@ -1,20 +1,26 @@
-# Data Structure - Shopping Cart #
+# Data Structure - Shopping Cart
+
+## Task:
 
 Buat sebuah `Software Library` Shopping Cart yang harus memilik fungsi:
 
 1. `void tambahProduk(string kodeProduk, int kuantitas)`
- - Menambahkan produk dengan kuantitas yang ditentukan.
- - Apabila produk sudah ada di dalam Cart, tambahkan kuantitasnya.
+
+- Menambahkan produk dengan kuantitas yang ditentukan.
+- Apabila produk sudah ada di dalam Cart, tambahkan kuantitasnya.
 
 2. `void hapusProduk(string kodeProduk)`
- - Menghapus produk dari Cart.
+
+- Menghapus produk dari Cart.
 
 3. `void tampilkanCart()`
- - Menampilkan isi Cart dengan format `{kodeProduk}` (`{kuantitas}`)
+
+- Menampilkan isi Cart dengan format `{kodeProduk}` (`{kuantitas}`)
 
 Buatlah class `Cart` berikut feature code dan unit testnya.
 
 ---
+
 Sebagai contoh gunakan skenario di bawah:
 
 ```
@@ -36,9 +42,28 @@ keranjang.tampilkanCart();
 ```
 
 Output:
+
 ```
 Pisang Hijau (2)
 Apel Merah (7)
 ```
+
+<br>
+
+## Finished with Javascript
+
+Running on **Node Js** :
+
+```
+node cart.js
+```
+
+Result:
+
+```
+Pisang Hijau (2)
+Apel Merah (7)
+```
+
 <!-- Program harap di upload ke PRIVATE GitHub repository dan tambahkan/invite fandywie sebagai Collaborator.
 Apabila ada pertanyaan dapat menghubungi tech.career@sirclo.co.id  -->
