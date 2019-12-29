@@ -32,5 +32,13 @@ Result:
 kapal jenis kapal pesiar berhasil disimpan ke tempat penyimpanan kapal pesiar
 ```
 
+<br>
+
+### Screenshoot
+
+<p align="center">
+    <img title="shipyard" src="https://res.cloudinary.com/naandalistcloud/image/upload/v1577619970/screenshoot/Screenshot_from_2019-12-29_18-42-10_gw6xfm.png" />
+</p>
+
 <!-- Class harap di upload ke PRIVATE GitHub repository dan tambahkan/invite fandywie sebagai Collaborator.
 Apabila ada pertanyaan dapat menghubungi tech.career@sirclo.co.id  -->

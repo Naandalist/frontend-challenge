@@ -65,5 +65,13 @@ Pisang Hijau (2)
 Apel Merah (7)
 ```
 
+<br>
+
+### Screenshoot
+
+<p align="center">
+    <img title="cart" src="https://res.cloudinary.com/naandalistcloud/image/upload/v1577621694/screenshoot/Screenshot_from_2019-12-29_19-14-42_ofz1uy.png" />
+</p>
+
 <!-- Program harap di upload ke PRIVATE GitHub repository dan tambahkan/invite fandywie sebagai Collaborator.
 Apabila ada pertanyaan dapat menghubungi tech.career@sirclo.co.id  -->
